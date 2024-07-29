@@ -7,23 +7,29 @@
     <title>Portfolio || Vashu Jain</title>
     <link rel="shortcut icon" href="Assets/Images/briefcase-1.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/339c1dcb99.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <header>
         <a href="#" class="logo"><img src="Assets/Images/logo.png" alt=""></a>
-        <ul class="nav">
-            <li><a href="#home">Home</a></li>
+        <ul class="nav" id="mynav">
+            <li><a href="#home" class="active">Home</a></li>
             <li><a href="#experience_div">Experience and Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#creative_service">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="Assets/pdf/Profile.pdf" download class="top-button"><img src="Assets/Images/dwnld.png" alt=""
-                height="45px" width="45px">Download
-            CV</a>
+        <div class="CV-menu">
+            <a href="Assets/pdf/Profile.pdf" download class="top-button"><img src="Assets/Images/dwnld.png" alt=""
+                    height="45px" width="45px">Download
+                CV</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
     </header>
 
     <section class="home" id="home">
@@ -57,21 +63,11 @@
         <p class="experience_div_heading scrollAnimate">
             EXPERIENCE AND EDUCATION
         </p>
-        <div class="upper_div">
-            <h2 class="resume_and_experience_heading scrollAnimate">
-                Resume of Experience and Education
-            </h2>
-            <div class="para_div">
-                <p class="upper_div_text scrollAnimate">
-                    Front-End Developer | Creating Engaging Interfaces and Seamless User Experiences through HTML, CSS,
-                    and JavaScript
-                    <!-- <br>
-                    * Back-End Developer | Building Scalable and Secure Server-Side Applications with Node.js and Python -->
-                </p>
-            </div>
-        </div>
         <div class="experience_div_main_content">
             <div class="inner_content_main">
+                <h2 class="resume_and_experience_heading scrollAnimate">
+                    Resume of Experience and Education
+                </h2>
                 <div class="inner_content scrollAnimate">
                     <img src="Assets/Images/briefcase-1.png" width="50px" height="50px" alt="">
                     <div class="inner-content_div">
@@ -121,7 +117,18 @@
                 </div>
             </div>
             <div class="inner_content_main scrollAnimate">
-                <div class="inner_content">
+                <div class="upper_div">
+                    <div class="para_div">
+                        <p class="upper_div_text scrollAnimate">
+                            Front-End Developer | Creating Engaging Interfaces and Seamless User Experiences through
+                            HTML, CSS,
+                            and JavaScript
+                            <!-- <br>
+                            * Back-End Developer | Building Scalable and Secure Server-Side Applications with Node.js and Python -->
+                        </p>
+                    </div>
+                </div>
+                <div class="inner_content scrollAnimate">
                     <img src="Assets/Images/remover bachel.png" width="50px" height="50px" alt="">
                     <div class="inner-content_div">
                         <div class="main_of_inner_content">
@@ -306,7 +313,7 @@
                 </div>
             </div>
             <div class="particular_service_div scrollAnimate">
-                <img src="./Assets/Images/Group 46.png" width="50px" height="50px" alt="">
+                <img src="./Assets/Images/Group 44.png" width="50px" height="50px" alt="">
                 <p class="particular_service_grid_heading">24/7 Support</p>
                 <p class="particular_service_grid_para">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                     Lorem Ipsum</p>
@@ -317,7 +324,7 @@
                 </div>
             </div>
             <div class="particular_service_div scrollAnimate">
-                <img src="./Assets/Images/Group 44.png" width="50px" height="50px" alt="">
+                <img src="./Assets/Images/Group 46.png" width="50px" height="50px" alt="">
                 <p class="particular_service_grid_heading">Testing Fixes</p>
                 <p class="particular_service_grid_para">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                     Lorem Ipsum</p>
@@ -419,6 +426,17 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mynav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
 
 </body>
 
