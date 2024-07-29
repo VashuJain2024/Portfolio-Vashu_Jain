@@ -949,7 +949,7 @@ section {
 
     to {
       top: 80px;
-      left: -130px;
+      left: -150px;
     }
   }
 
@@ -1021,7 +1021,7 @@ section {
   }
 
   #skills {
-    padding: 0;
+    margin: -150px auto 0px auto;
   }
 }
 
@@ -1048,11 +1048,46 @@ section {
     flex-direction: column;
     gap: 10px;
   }
-}
 
-@media screen and (max-width:500px) {
+  .logo img {
+    width: 130px;
+    height: 50px;
+  }
+
+  .top-button {
+    width: 130px;
+    height: 35px;
+    font-size: 11px;
+  }
+
+  .top-button img {
+    height: 30px;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
+
+  h1 {
+    width: 425px !important;
+    font-size: 80px !important;
+    line-height: 10px !important;
+  }
+
   .text {
     transform: scale(0.9);
     left: -245px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #projects {
+    transform: scale(0.7);
+    margin: -260px auto 0px auto;
+  }
+
+  #experience_div {
+    transform: scale(0.9);
+    margin: -65px auto 0px auto;
   }
 }
