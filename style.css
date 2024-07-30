@@ -1120,4 +1120,14 @@ section {
   .text {
     transform: scale(0.8);
   }
+
+  #experience_div{
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width:410px) {
+  .text{
+    transform: scale(0.7);
+  }
 }
