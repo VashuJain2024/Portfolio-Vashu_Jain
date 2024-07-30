@@ -630,7 +630,6 @@ span {
   font-size: 1.5rem;
   color: white;
   font-weight: bold;
-  text-wrap: nowrap;
 }
 
 .particular_service_grid_para {
@@ -896,6 +895,8 @@ section {
   #experience_div,
   #projects {
     transform: scale(0.8);
+    margin-top: -90px;
+    padding: 150px 0px 0px 0px;
   }
 
   .particular_service_div {
@@ -963,7 +964,7 @@ section {
 
   .home {
     transform: scale(1);
-    padding: 0;
+    padding: 100px 0px 0px 0px;
   }
 
   .experience_div_main_content {
@@ -973,7 +974,7 @@ section {
 
   #experience_div {
     transform: scale(1);
-    margin: 80px auto 60px auto;
+    margin: -60px auto 60px auto;
   }
 }
 
@@ -1024,9 +1025,37 @@ section {
   }
 }
 
+@media screen and (max-width:800px) {
+  .particular_service_div {
+    width: 245px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width:730px) {
+  .particular_service_div {
+    width: 340px;
+    padding: 1rem;
+  }
+}
+
 @media screen and (max-width:720px) {
   .slider {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .skill-img img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width:657px) {
+  .skill-img img {
+    height: 95px;
+    width: 95px;
   }
 }
 
@@ -1036,9 +1065,48 @@ section {
   }
 }
 
+@media screen and (max-width:657px) {
+  .skill-img img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .skill-img {
+    margin: 26px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width:616px) {
+  .skill-img {
+    margin: 26px 0px 0px 0px;
+  }
+}
+
 @media screen and (max-width:550px) {
   .what_i_can_do {
     height: 82px;
+  }
+}
+
+@media screen and (max-width:560px) {
+  .text {
+    top: 440px;
+  }
+
+  .pic {
+    width: 250px;
+  }
+
+  @keyframes picToLeft {
+    from {
+      top: 80px;
+      left: -850px;
+    }
+
+    to {
+      top: 80px;
+      left: -120px;
+    }
   }
 }
 
@@ -1098,7 +1166,7 @@ section {
 
   .logo img {
     width: 100px;
-    height: 30px;
+    height: 40px;
   }
 
   .top-button {
@@ -1122,6 +1190,15 @@ section {
 
   #experience_div {
     transform: scale(0.8);
+    margin: -210px auto 0px auto;
+  }
+
+  #projects {
+    margin: -360px auto 0px auto;
+  }
+
+  #skills {
+    margin: -280px auto 0px auto;
   }
 }
 
