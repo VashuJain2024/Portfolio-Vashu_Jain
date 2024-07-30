@@ -214,8 +214,8 @@ header {
 }
 
 h1 {
-  width: 530px !important;
-  font-family: sans-serif;
+  width: 480px !important;
+  font-family: DM Sans !important;
   font-size: 90px !important;
   font-weight: 600 !important;
   line-height: 35px !important;
@@ -1068,7 +1068,7 @@ section {
   }
 
   h1 {
-    width: 480px !important;
+    width: 425px !important;
     font-size: 80px !important;
     line-height: 10px !important;
   }
