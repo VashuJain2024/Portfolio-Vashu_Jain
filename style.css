@@ -15,6 +15,10 @@ body {
   scrollbar-color: #afb2bf; */
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* ********************************** Navigation Bar CSS ************************************************* */
 
 header {
@@ -474,6 +478,10 @@ span {
   border-bottom-right-radius: 30px;
 }
 
+.project-info a {
+  color: white;
+}
+
 .project-info h2 {
   font-size: 30px;
   font-family: DM Sans;
@@ -675,7 +683,7 @@ section {
   width: 100%;
   margin: 20px 0;
   font-family: Arial, sans-serif;
-  background-color: #18202D;
+  /* background-color: #18202D; */
   color: #fff;
   padding: 0;
   display: flex;
